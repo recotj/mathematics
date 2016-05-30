@@ -1,7 +1,10 @@
 define(function (require, module, exports) {
-	var data = require('yaml!./article_1.yml');
+	var articles = [
+		require('yaml!./article_1.yml'),
+		require('yaml!./article_2.yml')
+	];
 	var template = require('hbs!./article');
 
 	//module.exports = template(data);
-	return template(data);
+	return articles.map(template);
 });

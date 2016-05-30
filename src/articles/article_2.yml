@@ -1,0 +1,33 @@
+title: Differential Equations
+sections:
+  -
+    title: $ 求微分方程：\quad {\frac{dy}{dx}} + P(x)y = Q(x)\quad 的通解 $
+    content: >
+      $$
+        {\frac{dy}{dx}} + P(x)y = Q(x) \Rightarrow dy + yP(x)dx = Q(x)dx \quad \quad \quad (1)
+      $$
+
+      $ \forall P(x)，\exists R(x)，使得：$
+
+      $$
+        R(x)dy + yP(x)R(x)dx = d(R(x)y) = R(x)dy + yR'(x)dx \\
+        \Rightarrow P(x)R(x) = R'(x)
+        \Rightarrow P(x) = ln'R(x)
+        \Rightarrow R(x) = e^{\int P(x)dx}
+      $$
+
+      $ 对(1)式两边同乘R(x)，则有：$
+
+      $$
+        R(x)dy + yP(x)R(x)dx = d(R(x)y) = Q(x)R(x)dx
+      $$
+
+      $ 两边求积：$
+
+      $$
+        R(x)y = \int Q(x)R(x)dx + C
+      $$
+
+      $$
+        \therefore y = (\int Q(x)R(x)dx + C) / R(x) = e^{-\int P(x)dx}(\int Q(x)e^{-\int P(x)dx}dx + C)
+      $$
