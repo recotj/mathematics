@@ -7,9 +7,6 @@
 [submodule "lib/requirejs-handlebars"]
 	path = lib/requirejs-handlebars
 	url = https://github.com/SlexAxton/require-handlebars-plugin.git
-[submodule "requirejs-plugins"]
-	path = requirejs-plugins
-	url = https://github.com/millermedeiros/requirejs-plugins.git
 [submodule "lib/js-yaml"]
 	path = lib/js-yaml
 	url = https://github.com/nodeca/js-yaml.git
@@ -19,3 +16,6 @@
 [submodule "lib/mathjax"]
 	path = lib/mathjax
 	url = https://github.com/mathjax/MathJax.git
+[submodule "lib/requirejs-plugins"]
+	path = lib/requirejs-plugins
+	url = https://github.com/millermedeiros/requirejs-plugins.git
