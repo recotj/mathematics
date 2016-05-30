@@ -1,0 +1,164 @@
+title: 应力系统基础
+sections:
+  -
+    title: >
+      $ 给定二维应力系统
+        \begin{bmatrix}
+          \sigma_x & \tau_y   \\
+          \tau_x   & \sigma_y
+        \end{bmatrix}
+      ，求正、切应力最值. $
+    content: >
+      $ 设
+        \begin{bmatrix}
+          \sigma_\theta        & \tau_{\theta + 90^o} \\
+          \tau_{\theta + 90^o} & \sigma_\theta
+        \end{bmatrix}
+        为应力单元旋转\theta后得到的等价的应力系统，显然有：$
+
+      $$
+        \begin{bmatrix}
+          \sigma_\theta & \tau_{\theta + 90^o} \\
+          \tau_{\theta + 90^o} & \sigma_\theta
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+          \cos\theta & -\sin\theta\\
+          \sin\theta & \cos\theta
+        \end{bmatrix}
+        \cdot
+        \begin{bmatrix}
+          \sigma_x & \tau_y\\
+          \tau_x   & \sigma_y
+        \end{bmatrix}
+        \cdot
+        \begin{bmatrix}
+          \cos\theta  & \sin\theta\\
+          -\sin\theta & \cos\theta
+        \end{bmatrix}
+      $$
+  -
+    title: $ 1. 求正应力最值\sigma_{max}, \sigma_{min} $
+    content: >
+      $ \because $
+      $$
+        \tau_x = \tau_y \\
+      $$
+
+      $ \therefore
+          \begin{bmatrix}
+            \sigma_x & \tau_y   \\
+            \tau_x   & \sigma_y
+          \end{bmatrix}
+          为对称矩阵，可正交对角化为:
+          \begin{bmatrix}
+            \sigma_{max} & 0          \\
+            0            & \sigma_{min}
+          \end{bmatrix}
+
+        \\ $
+
+
+      $ 令 $
+      $$
+        \begin{vmatrix}
+          \sigma_x - \lambda & \tau              \\
+          \tau               & \sigma_y - \lambda
+        \end{vmatrix} = 0
+      $$
+      $ 得：$
+
+      $$
+        \lambda =
+          \frac{\sigma_x + \sigma_y}{2}
+          \pm
+          \sqrt{
+            (\frac{\sigma_x - \sigma_y}{2})^2
+            +
+            {\tau_x}^2
+          }
+
+        \\
+      $$
+
+      $ \therefore $
+      $$
+          \sigma_{max} =
+            \frac{\sigma_x + \sigma_y}{2}
+            +
+            \sqrt{
+              (\frac{\sigma_x - \sigma_y}{2})^2
+              +
+              {\tau_x}^2
+            }
+
+          \\
+
+          \sigma_{min} =
+            \frac{\sigma_x + \sigma_y}{2}
+            -
+            \sqrt{
+              (\frac{\sigma_x - \sigma_y}{2})^2
+              +
+              {\tau_x}^2
+            }
+      $$
+
+  -
+    title: $ 2.求切应力最值\tau_{max} $
+    content: >
+      $ \because $
+      $$
+          \begin{bmatrix}
+            \sigma_\theta & \tau_{\theta + 90^o}   \\
+            \tau_\theta   & \sigma_{\theta + 90^o}
+          \end{bmatrix}
+          \sim
+          \begin{bmatrix}
+            \sigma_x & \tau_y   \\
+            \tau_x   & \sigma_y
+          \end{bmatrix}
+          \sim
+          \begin{bmatrix}
+            \sigma_{max} & 0            \\
+            0            & \sigma_{min}
+          \end{bmatrix}
+      $$
+
+      $ \therefore 有: \\ $
+
+      $ \ 1)\quad 迹tr(A) 不变，即\ $
+      $$
+        \sigma_\theta + \sigma_{\theta+90^o}
+        = \sigma_x + \sigma_y
+        = \sigma_{max} + \sigma_{min}
+      $$
+
+      $ \ 2)\quad 模|A| 不变， 即\ $
+      $$
+        \sigma_\theta \cdot \sigma_{\theta + 90^o} - \tau_\theta \cdot \tau_{\theta + 90^o}
+        = \sigma_x \cdot \sigma_y - {\tau_x}^2
+        = \sigma_{max} \cdot \sigma_{min}
+
+        \\
+
+        \Rightarrow {\tau_\theta}^2
+        = \tau_\theta \cdot \tau_{\theta + 90^o}
+        = \sigma_\theta \cdot \sigma_{\theta + 90^o} - \sigma_{max} \cdot \sigma_{min} \\
+        \leqslant (\frac{\sigma_\theta + \sigma_{\theta + 90^o}}{2})^2 - \sigma_{max} \cdot \sigma_{min}
+        = (\frac{\sigma_{max} + \sigma_{min}}{2})^2 - \sigma_{max} \cdot \sigma_{min}
+        = (\frac{\sigma_{max} - \sigma_{min}}{2})^2
+
+        \\
+
+        \Rightarrow \tau_\theta \leqslant {\frac{1}{2}}(\sigma_{max} - \sigma_{min})
+      $$
+
+      $ 等号当且仅当 \sigma_\theta = \sigma_{\theta + 90^o} = {\frac{1}{2}}(\sigma_x + \sigma_y) 成立 \\ $
+
+      $ \therefore $
+      $$
+        \tau_{max} =
+        {\frac{1}{2}}(\sigma_{max} - \sigma_{min})
+        = \sqrt{(\frac{\sigma_x - \sigma_y}{2})^2 + {\tau_x}^2}
+      $$

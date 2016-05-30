@@ -25,9 +25,9 @@ sections:
       $ 两边求积：$
 
       $$
-        R(x)y = \int Q(x)R(x)dx + C
+        R(x)y = \int Q(x)R(x)dx + C \\
       $$
-
+      $ \therefore $
       $$
-        \therefore y = (\int Q(x)R(x)dx + C) / R(x) = e^{-\int P(x)dx}(\int Q(x)e^{-\int P(x)dx}dx + C)
+        y = (\int Q(x)R(x)dx + C) / R(x) = e^{-\int P(x)dx}(\int Q(x)e^{-\int P(x)dx}dx + C)
       $$
