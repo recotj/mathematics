@@ -4,7 +4,6 @@ var require = {
 		hbs: '../lib/requirejs-handlebars/hbs',
 		"js-yaml" : '../lib/js-yaml/dist/js-yaml',
 		yaml : '../lib/requirejs-yaml/yaml',
-		json: '../lib/requirejs-plugins/src/json',
 		MathJax: '../lib/mathjax/config/TeX-AMS_CHTML'
 	},
 	shim: {
