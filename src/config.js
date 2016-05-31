@@ -1,10 +1,9 @@
 var require = {
 	paths: {
 		text: '../lib/text/text',
-		hbs: '../lib/requirejs-handlebars/hbs',
+		hbs: '../lib/require-handlebars-plugin/hbs',
 		"js-yaml" : '../lib/js-yaml/dist/js-yaml',
-		yaml : '../lib/requirejs-yaml/yaml',
-		json: '../lib/requirejs-plugins/src/json',
+		yaml : '../lib/require-yaml/yaml',
 		MathJax: '../lib/mathjax/config/TeX-AMS_CHTML'
 	},
 	shim: {

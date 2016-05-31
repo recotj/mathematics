@@ -1,0 +1,50 @@
+{
+  "name": "require-yaml",
+  "version": "0.1.2",
+  "authors": [
+    "Frederik Ring <frederik.ring@gmail.com>"
+  ],
+  "description": "requirejs loader for yaml files",
+  "main": "yaml.js",
+  "keywords": [
+    "requirejs",
+    "loader",
+    "plugin",
+    "amd",
+    "yaml"
+  ],
+  "bugs": {
+    "url": "https://github.com/m90/require-yaml/issues"
+  },
+  "url": "https://github.com/m90/require-yaml",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/m90/require-yaml.git"
+  },
+  "dependencies": {
+    "requirejs-text": "~2.0.12",
+    "js-yaml": "~3.3.1"
+  },
+  "devDependencies": {
+    "almond": "~0.3.0"
+  },
+  "homepage": "https://github.com/m90/require-yaml",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.2",
+    "commit": "ffcb9f6e59cbddd19099ec01f8580ce98e63ee34"
+  },
+  "_source": "https://github.com/m90/require-yaml.git",
+  "_target": "^0.1.2",
+  "_originalSource": "require-yaml",
+  "_direct": true
+}
