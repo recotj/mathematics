@@ -1,0 +1,10 @@
+body {
+	background: gray;
+}
+
+body>div>article {
+	margin: 16px;
+	padding: 30px;
+	background: #fff;
+	border-radius: 0.6em;
+}
