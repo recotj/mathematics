@@ -8,7 +8,7 @@ var require = {
 	},
 	shim: {
 		'MathJax': {
-			deps: ['../lib/mathjax/MathJax'],
+			deps: ['../lib/MathJax/MathJax'],
 			exports: ['MathJax'],
 			init: function () {
 				window.MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
