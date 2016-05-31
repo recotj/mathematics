@@ -46,18 +46,23 @@ sections:
       $$
 
       $ \therefore
-          \begin{bmatrix}
-            \sigma_x & \tau_y   \\
-            \tau_x   & \sigma_y
-          \end{bmatrix}
-          为对称矩阵，可正交对角化为:
-          \begin{bmatrix}
-            \sigma_{max} & 0          \\
-            0            & \sigma_{min}
-          \end{bmatrix}
-
-        \\ $
-
+        存在正交矩阵 \
+        \begin{bmatrix}
+          \sigma_{max} & 0          \\
+          0            & \sigma_{min}
+        \end{bmatrix} \
+        使得: $
+      $$
+        \begin{bmatrix}
+          \sigma_x & \tau_y   \\
+          \tau_x   & \sigma_y
+        \end{bmatrix}
+        \sim
+        \begin{bmatrix}
+          \sigma_{max} & 0          \\
+          0            & \sigma_{min}
+        \end{bmatrix}
+      $$
 
       $ 令 $
       $$
