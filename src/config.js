@@ -4,7 +4,7 @@ var require = {
 		hbs: '../lib/require-handlebars-plugin/hbs',
 		"js-yaml" : '../lib/js-yaml/dist/js-yaml',
 		yaml : '../lib/require-yaml/yaml',
-		MathJax: '../lib/mathjax/config/TeX-AMS_CHTML'
+		MathJax: '../lib/MathJax/config/TeX-AMS_CHTML'
 	},
 	shim: {
 		'MathJax': {
